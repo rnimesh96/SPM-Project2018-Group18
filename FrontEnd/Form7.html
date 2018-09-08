@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="maindiv">
+    <!--HTML Form -->
+    <div class="form_div">
+        <form action="Form7insert.php" method="post" enctype="multipart/form-data" id ="vehicle">
+            <!-- Method can be set as POST for hiding values in URL-->
+            <h2>Student performance evaluation</h2>
+            <h3>Student Information</h3>
+            <label>Student Name</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input class="input" name="StudentName" type="text" value=""  style=" width: 225px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Student ID</label>
+            <input class="input" name="StudentID" type="text" value="" style=" width: 225px;"></br>
+            <label>Student's Phone</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <input class="input" name="StudentPhone" type="text" value=""  style=" width: 225px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Student's Email</label>
+            <input class="input" name="StudentEmail" type="email" value="" style=" width: 225px;"></br>
+
+            <h3>Employee Information</h3>
+            <label>Employee's Name</label>
+            &nbsp&nbsp
+            <input class="input" name="EmployeeName" type="text" value=""  style=" width: 225px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Supervisor's Phone</label>
+            <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;"></br>
+
+            <h3>Academic Information</h3>
+            <label>Degree title</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input class="input" name="Degreetitle" type="text" value=""  style=" width: 225px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Specification</label>
+            <input class="input" name="Specification" type="text" value="" style=" width: 225px;"></br>
+            <label>Internship Duration</label>
+            <input class="input" name="InternshipDuration" type="text" value=""  style=" width: 225px; ">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Number Of Credits</label>
+            <input class="input" name="NumberOfCredits" type="text" value="" style=" width: 225px;"></br>
+            <label>Internship Title</label>
+            <input class="input" name="InternshipTitle" type="text" value=""  style="margin-left: 31px"></br>
+
+            <label>Commnents on how the internship benefited the student</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <textarea cols="25" name="Commnents1" rows="5"></textarea>
+            <td></br>
+                <label>Commnents on how the student performed including observation on the report:</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="Commnents2" rows="5"></textarea>
+            <td></br>
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Final Grade</label>
+                <input class="input" name="FinalGrade" type="text" value="" style=" width: 42px;"></br>
+                <label>Examiner's Name </label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="input" name="ExaminerName" type="text" value="" style=" width: 225px;"></br>
+
+                <label>External Supervisor Name </label>
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Date</label>
+                <input class="input" name="Date" type="date" value="" style=" width: 225px;">
+
+        </form>
+
+
+        <h2>Note</h2>
+        <span style="color:red">Please e-mail this form within one week after the start date mentioned above to saman.g@sliit.lk by the external supervisor’s official e-mail</span>
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
