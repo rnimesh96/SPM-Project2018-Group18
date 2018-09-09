@@ -14,20 +14,20 @@
             <h2>Internship Acceptance Form I-1 </h2>
             <span style="color:red;margin-left: 130px;">(To be filled by the student)</span>
             <label >Student ID:</label>
-            <input class="input" name="StudentID" type="text" value="" style="width: 230px;   "></br>
+            <input class="input" name="StudentID" type="text" value="" style="width: 230px; pattern ="^\d{2}-\s{10}$" required"></br>
             <label>Student Name:</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="input" name="StudentName" type="text" value=""></br>
+            <input class="input" name="StudentName" type="text" value="" pattern="^\s{30}$" required ></br>
             <label>Address:</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <textarea cols="25" name="Address" rows="5"></textarea>
+            <textarea cols="25" name="Address" rows="5" pattern="^\s{100}$" required></textarea>
             <td></br>
                 <label>Home Phone:</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="HomePhone" type="text" value=""></br>
+                <input class="input" name="HomePhone" type="text" value=""pattern="^\d{10}$" required></br>
                 <label>Mobile Phone:</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="MobilePhone" type="text" value=""></br>
+                <input class="input" name="MobilePhone" type="text" value="" pattern="^\d{10}$" required></br>
                 <label>Email:</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -64,28 +64,28 @@
                 <span style="color:red">(To be filled by the Employee)</span><br/>
                 <label>Employee Name</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="EmployeeName" type="text" value=""></br>
+                <input class="input" name="EmployeeName" type="text" value=""pattern="^\s{30}$" required></br>
 
                 <label>Employee Address</label>
                 &nbsp&nbsp&nbsp
-                <input class="input" name="EmployeeAddress" type="text" value=""></br>
+                <input class="input" name="EmployeeAddress" type="text" value=""pattern="^\s{100}$" required></br>
 
                 <label>Supervisor's Name</label>
                 &nbsp&nbsp&nbsp
-                <input class="input" name="SupervisorName" type="text" value=""  style=" width: 225px;">
+                <input class="input" name="SupervisorName" type="text" value=""  style=" width: 225px;"pattern="^\s{30}$" required>
                 &nbsp
                 <label>Supervisor's Phone</label>
-                <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;"></br>
+                <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;" pattern="^\d{10}$" required></br>
                 <label>Supervisor's Title</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="SupervisorTitle" type="text" value="" style=" width: 225px;">
+                <input class="input" name="SupervisorTitle" type="text" value="" style=" width: 225px;"pattern="^\s{30}$" required>
                 &nbsp&nbsp
 
                 <label>Supervisor's Email</label>
                 <input class="input" name="SupervisorEmail" type="text" value="" style=" width: 225px;"></br>
 
                 <label>Internship Start Date</label>
-                <input class="input" name="InternshipStartDate" type="date" value="" style=" width: 225px;">
+                <input class="input" name="InternshipStartDate" type="date" value="" style=" width: 225px;" >
                 <label>Internship End Date</label>
                 <input class="input" name="InternshipEndDate" type="date" value="" style=" width: 225px;"></br>
                 <span style="color:red">(Recommended Period is no less than 6 months)</span></br>
@@ -95,7 +95,7 @@
                 </br>
                 </br>
                 <label><b>Please List  the tasks the students is expected to complete</b></label>
-                <textarea cols="25" name="studentTasks" rows="5" style="    width: 745px;"></textarea></br></br>
+                <textarea cols="25" name="studentTasks" rows="5" style="    width: 745px;" pattern="^\s{150}$" required></textarea></br></br>
             <td>
 
                 <label><b>List What the student will learn during the internship period </b></label>
