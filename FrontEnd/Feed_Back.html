@@ -151,7 +151,7 @@
     <div class="form_div">
         <h2>Feed Back</h2>
 
-        <form action="AnimalAccessoriesInsert.php" method="post" enctype="multipart/form-data" id ="vehicle">
+        <form action="FeedBack.php" method="post" enctype="multipart/form-data" id ="feedback">
             <!-- Method can be set as POST for hiding values in URL-->
 
 
@@ -160,20 +160,20 @@
             <div id="content" style="float: left">
 
                 <label><b>Supervisor's  Name</b></label>&nbsp;&nbsp;
-                <input class="input" name="price" type="text" value="" style=" width: 225px;"></br>
+                <input class="input" name="SuName" type="text" value="" style=" width: 225px;" pattern ="^\s{50}$" required></br>
 
                 <label><b>Company Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input class="input" name="price" type="text" value="" style=" width: 225px;"></br>
+                <input class="input" name="CmnyName" type="text" value="" style=" width: 225px;" pattern ="^\s{50}$" required></br>
 
                 <label><b>Student Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input class="input" name="price" type="text" value="" style=" width: 225px;"></br>
+                <input class="input" name="StdName" type="text" value="" style=" width: 225px;" pattern ="^\s{50}$" required></br>
 
                 <label><b>Student ID</b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <input class="input" name="price" type="text" value="" style=" width: 225px;"></br>
+                <input class="input" name="Std ID" type="text" value="" style=" width: 225px;" pattern ="^\s{2}-\d{8}$" required ></br>
 
                 <label><b>Message</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <textarea cols="50" name="CompnyOverview" rows="15" style="margin-left: 258px"></textarea>
+                <textarea cols="50" name="Message" rows="15" style="margin-left: 258px" required></textarea>
                 </br>
 
                 <input class="reset" name="reset" type="reset" value="Reset">&nbsp;&nbsp;&nbsp;&nbsp;
