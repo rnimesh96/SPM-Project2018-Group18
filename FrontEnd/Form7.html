@@ -13,39 +13,39 @@
             <h3>Student Information</h3>
             <label>Student Name</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="input" name="StudentName" type="text" value=""  style=" width: 225px;">
+            <input class="input" name="StudentName" type="text" value=""  style=" width: 225px;"pattern ="^\s{30}$" required>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Student ID</label>
-            <input class="input" name="StudentID" type="text" value="" style=" width: 225px;"></br>
+            <input class="input" name="StudentID" type="text" value="" style=" width: 225px;"pattern ="^\d{2}-\s{10}$" required></br>
             <label>Student's Phone</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="input" name="StudentPhone" type="text" value=""  style=" width: 225px;">
+            <input class="input" name="StudentPhone" type="text" value=""  style=" width: 225px;"pattern ="^\d{10}$" required>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Student's Email</label>
-            <input class="input" name="StudentEmail" type="email" value="" style=" width: 225px;"></br>
+            <input class="input" name="StudentEmail" type="email" value="" style=" width: 225px;" ></br>
 
             <h3>Employee Information</h3>
             <label>Employee's Name</label>
             &nbsp&nbsp
-            <input class="input" name="EmployeeName" type="text" value=""  style=" width: 225px;">
+            <input class="input" name="EmployeeName" type="text" value=""  style=" width: 225px;"pattern ="^\s{30}$" required>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Supervisor's Phone</label>
-            <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;"></br>
+            <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;" pattern ="^\d{10}$" required></br>
 
             <h3>Academic Information</h3>
             <label>Degree title</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="input" name="Degreetitle" type="text" value=""  style=" width: 225px;">
+            <input class="input" name="Degreetitle" type="text" value=""  style=" width: 225px;"pattern ="^\s{30}$" required>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Specification</label>
-            <input class="input" name="Specification" type="text" value="" style=" width: 225px;"></br>
+            <input class="input" name="Specification" type="text" value="" style=" width: 225px;"pattern ="^\s{30}$" required></br>
             <label>Internship Duration</label>
             <input class="input" name="InternshipDuration" type="text" value=""  style=" width: 225px; ">
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Number Of Credits</label>
             <input class="input" name="NumberOfCredits" type="text" value="" style=" width: 225px;"></br>
             <label>Internship Title</label>
-            <input class="input" name="InternshipTitle" type="text" value=""  style="margin-left: 31px"></br>
+            <input class="input" name="InternshipTitle" type="text" value=""  style="margin-left: 31px"pattern ="^\s{30}$" required></br>
 
             <label>Commnents on how the internship benefited the student</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -61,10 +61,10 @@
                 <input class="input" name="FinalGrade" type="text" value="" style=" width: 42px;"></br>
                 <label>Examiner's Name </label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="ExaminerName" type="text" value="" style=" width: 225px;"></br>
+                <input class="input" name="ExaminerName" type="text" value="" style=" width: 225px;"pattern ="^\s{30}$" required></br>
 
                 <label>External Supervisor Name </label>
-                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;">
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;"pattern ="^\s{30}$" required>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <label>Date</label>
                 <input class="input" name="Date" type="date" value="" style=" width: 225px;">
