@@ -23,21 +23,21 @@
     $CV1= $_POST['cv2'];
 
     if($Advertiser_name !=''){
-    //Insert Query of SQL
-    $query = mysql_query("INSERT INTO form6(StudentID,StudentName,Address,HomePhone,MobilePhone,Email,semester,year,CGPA,EmployeeName,
-    $StudentName,$StudentID,$Introduction1,$Introduction2,$Introduction3,$IntrenIns1,$IntrenIns2,$IntrenIns3,
-    $LearnOut1,$LearnOut2,$LearnOut3,$CV1,$CV2) values ('$StudentID','$StudentName','$Address','$HomePhone','$MobilePhone','$Email','$semester','$year','$CGPA','$EmployeeName
-    ','$EmployeeAddress','$SupervisorName','$SupervisorPhone','$SupervisorTitle','$SupervisorEmail','$InternshipStartDate','$InternshipEndDate','$NoOFHours','$
-    studentTasks','$studentLearn','$ExternalSupervisorName','$Date'
-    )");
+        //Insert Query of SQL
+        $query = mysql_query("INSERT INTO form6(semester,year,date,StudentID,StudentName,Address,HomePhone,MobilePhone,Email,semester,year,CGPA,EmployeeName,
+        $StudentName,$StudentID,$Introduction1,$Introduction2,$Introduction3,$IntrenIns1,$IntrenIns2,$IntrenIns3,
+        $LearnOut1,$LearnOut2,$LearnOut3,$CV1,$CV2) values ('$semester','$year','$date','$StudentID','$StudentName','$Address','$HomePhone','$MobilePhone',
+    	'$Email','$semester','$year','$CGPA','$EmployeeName','$EmployeeAddress','$SupervisorName','$SupervisorPhone','$SupervisorTitle','$SupervisorEmail',
+    	'$InternshipStartDate','$InternshipEndDate','$NoOFHours','$studentTasks','$studentLearn','$ExternalSupervisorName','$Date'
+        )");
 
-    echo "<br/><br/><span>Data Inserted successfully...!!</span>";
-    }
-    else{
-    echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
-    }
-    }
-    mysql_close($connection); // Closing Connection with Server
-    ?>
+        echo "<br/><br/><span>Data Inserted successfully...!!</span>";
+        }
+        else{
+        echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+        }
+        }
+        mysql_close($connection); // Closing Connection with Server
+        ?>
 
     </html>
