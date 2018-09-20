@@ -16,20 +16,24 @@
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Student ID </label>
             &nbsp
-            <input class="input" name="StudentID" type="text" value=""  style=" width: 225px;">
+
+            <input class="input" name="StudentID" type="text" value=""  style=" width: 225px;"pattern ="^\s{2}-\d{8}$" required">
             &nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Student's Name</label>
-            <input class="input" name="StudentName" type="text" value="" style=" width: 225px;"></br>
+            <input class="input" name="StudentName" type="text" value="" style=" width: 225px;"pattern ="^\s{30}$" required></br>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Employee's Name</label>&nbsp&nbsp&nbsp
-            <input class="input" name="EmployeeName" type="text" value=""  style=" width: 225px;">&nbsp
+            <input class="input" name="EmployeeName" type="text" value=""  style=" width: 225px;" pattern ="^\s{30}$" required>&nbsp
             <label>Supervisor's Name</label>
-            <input class="input" name="SupervisorName" type="text" value="" style=" width: 225px;"></br>
+            <input class="input" name="SupervisorName" type="text" value="" style=" width: 225px; pattern ="^\s{30}$" required"></br>
+
             </br></br>
 
             <label>Describe the differances,if any,between student's initial contract and actual assignment which developed</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <textarea cols="25" name="differances" rows="5"></textarea>
+
+            <textarea cols="25" name="differances" rows="5" pattern ="^\s{100}$" required></textarea>
+
             <td></br>
 
                 <h2>Performance of the student</h2>
@@ -239,7 +243,7 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <label>Date</label>
                 <input class="input" name="Date" type="date" value="" style=" width: 225px;">
-
+ <input class="submit" name="submit" type="submit" value="Insert">
         </form>
 
 
@@ -252,4 +256,6 @@
     </div>
 </div>
 </body>
+
 </html>
+
