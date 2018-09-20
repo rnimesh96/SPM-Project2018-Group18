@@ -12,7 +12,6 @@
             font-family:'Droid Serif',serif;
             font-size:14px
         }
-
         .form_div {
             width:70%;
             float:left
@@ -21,7 +20,6 @@
             width:940px;
             border:1px  ;
             padding:10px 30px 40px;
-
         }
         form h2 {
             font-size: 60px;
@@ -39,7 +37,6 @@
             border:none;
             margin-left: 0px;
         }
-
         p {
             color:red;
             text-align:center
@@ -48,54 +45,40 @@
             text-align:center;
             color:green
         }
-
         #header{
             float:left;
-
         }
-
         #header p{
             color: black;
             font-size: 20px;
         }
-
         #header-image{
-
             margin-top: 15px;
             float: right;
-
         }
-
         #dropdown{
             margin-left: 180px;
             margin-top: -70px;
         }
-
-
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 100%;
         }
-
         td, th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
         }
-
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-
-
         .styled-select {
             background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
             height: 29px;
             overflow: hidden;
             width: 240px;
         }
-
         .styled-select select {
             background: transparent;
             border: none;
@@ -104,48 +87,40 @@
             padding: 5px; /* If you add too much padding here, the options won't show in IE */
             width: 268px;
         }
-
         .styled-select.slate {
             background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
             height: 34px;
             width: 240px;
         }
-
         .styled-select.slate select {
             border: 1px solid #ccc;
             font-size: 16px;
             height: 34px;
             width: 268px;
         }
-
         /* -------------------- Rounded Corners */
         .rounded {
             -webkit-border-radius: 20px;
             -moz-border-radius: 20px;
             border-radius: 20px;
         }
-
         .semi-square {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
         }
-
         /* -------------------- Colors: Background */
         .slate   { background-color: #ddd; }
         .green   { background-color: #779126; }
         .blue    { background-color: #3b8ec2; }
         .yellow  { background-color: #eec111; }
         .black   { background-color: #000; }
-
         /* -------------------- Colors: Text */
         .slate select   { color: #000; }
         .green select   { color: #fff; }
         .blue select    { color: #fff; }
         .yellow select  { color: #000; }
         .black select   { color: #fff; }
-
-
         /* -------------------- Select Box Styles: danielneumann.com Method */
         /* -------------------- Source: http://danielneumann.com/blog/how-to-style-dropdown-with-css-only/ */
         #mainselection select {
@@ -160,7 +135,6 @@
             *background: #58B14C;
             -webkit-appearance: none;
         }
-
         #mainselection {
             overflow:hidden;
             width:350px;
@@ -170,8 +144,6 @@
             box-shadow: 1px 1px 11px #330033;
             background: #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
         }
-
-
         /* -------------------- Select Box Styles: stackoverflow.com Method */
         /* -------------------- Source: http://stackoverflow.com/a/5809186 */
         select#soflow, select#soflow-color {
@@ -194,7 +166,6 @@
             white-space: nowrap;
             width: 168px;
         }
-
         select#soflow-color {
             color: #fff;
             background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
@@ -204,17 +175,15 @@
             border-radius: 20px;
             padding-left: 15px;
         }
-
-    #Homepage p{
-          font-size: 20px;
-          color: #3b8ec2;
-      }
+        #Homepage p{
+            font-size: 20px;
+            color: #3b8ec2;
+        }
         #Homepage span{
             margin-left: 234px;
-          font-size: 20px;
-          color: #3b8ec2;
-      }
-
+            font-size: 20px;
+            color: #3b8ec2;
+        }
         #content h2{
             color: #123456;
             float: left;
@@ -225,7 +194,6 @@
             float: left;
             font-size: 16px;
         }
-
         .submit {
             color:#fff;
             border-radius:3px;
@@ -247,9 +215,9 @@
     <div class="form_div">
 
 
-        <form action="InsertForm6.php" method="post" enctype="multipart/form-data" id ="Form6">
 
-     
+
+        <form action="Form I-6.php" method="post" enctype="multipart/form-data" id ="Form6">
 
             <!-- Method can be set as POST for hiding values in URL-->
             <div id="header">
@@ -262,7 +230,9 @@
             <h2><img src="./images/Header.JPG" ></h2>
 
             <div id="dropdown" style="height: 22px;" >
-                <select id="soflow" style="margin-left: 125px;" name="semester">
+                <select id="soflow"  style="margin-left: 105px;" name="semester" >
+
+
 
                     <option value="January">January</option>
                     <option value="February">February</option>
@@ -278,7 +248,9 @@
                     <option value="December">December</option>
 
                 </select>
+
                 <select id="soflow" name="year">
+
 
                     <option value="2010">2010</option>
                     <option value="2011">2011</option>
@@ -296,19 +268,27 @@
                     <option value="2023">2023</option>
 
                 </select>
+                <br/>
+                <p style="font-size: 12px; margin-top: -15px; color: #123456;margin-right: 165px">In take</p>
             </div>
-            <h2><img src="./images/Header2.JPG" style="margin-top: -31px;"></h2>
-           <div id ="Homepage">
-              <p> <input class="input" name="price" type="date" value="" style=" width: 200px; text-align: center"> </p>
-               <span style="">STUDENT NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </span>
+            <h2><img src="./images/Header2.JPG" style="margin-top: -25px;"></h2>
+            <div id ="Homepage">
+                <p> <input class="input" name="date" type="date" value="" style=" width: 200px; text-align: center">
+                <br/>
+                <p style="font-size: 12px; margin-top: -15px">Date</p>
+                </p>
+                <span style="">STUDENT NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </span>
 
-               <input class="input" name="name" type="text" value="" style=" width: 225px;" pattern ="^\s{30}$" required>
-               <br/><br/>
-               <span>STUDENT NUMBER :</span>
-               <input class="input" name="number" type="text" value="" style=" width: 225px;" pattern ="^\s{2}-\d{8}$" required>
+                <input class="input" name="name" type="text" value="" style=" width: 225px;" pattern ="^\s{30}$" required>
+                <br/><br/>
+                <span>STUDENT NUMBER :</span>
+                <input class="input" name="ITNO" type="text" value="" style=" width: 225px;" pattern ="^\s{2}-\d{8}$" required>
 
 
-           </div>
+            </div>
+
+
+
             <br/>
             <br/>
             <br/>
@@ -317,35 +297,35 @@
                 <p id="con">
                     1 INTRODUCTION ........................................................................................................................................................ <br/>
                 <p style="text-align:justify; float: left;margin-left: 25px;color: black">
-                        1.1 COMPANY OVERVIEW <br/>
-                        1.2 PROJECT OVERVIEW <br/>
-                        1.3 GLOSSARY <br/>
+                    1.1 COMPANY OVERVIEW <br/>
+                    1.2 PROJECT OVERVIEW <br/>
+                    1.3 GLOSSARY <br/>
                 </p>
                 </p>
 
                 <p id="con">
                     2 INTERNSHIP INSIGHT ................................................................................................................................................ <br/>
                 <p style="text-align:justify; float: left;margin-left: 25px;color: black">
-                2.1 OBJECTIVES <BR/>
-                2.2 PROCEDURES <BR/>
-                2.3 METHODOLOGY <BR/>
+                    2.1 OBJECTIVES <BR/>
+                    2.2 PROCEDURES <BR/>
+                    2.3 METHODOLOGY <BR/>
                 </p>
                 </p>
 
                 <p id="con">
                     3 LEARNING OUTCOME ................................................................................................................................................ <br/>
                 <p style="text-align:justify; float: left;margin-left: 25px;color: black">
-                3.1 LEARNING <BR/>
-                3.2 MEASURABLE OUTCOME<BR/>
-                3.3 EFFECTIVENESS OF THE EFFORT<BR/>
-                 </p>
+                    3.1 LEARNING <BR/>
+                    3.2 MEASURABLE OUTCOME<BR/>
+                    3.3 EFFECTIVENESS OF THE EFFORT<BR/>
+                </p>
                 </p>
 
                 <p id="con">
                     4 SAMPLE WORK ............................................................................................................................................................. <br/>
                 <p style="text-align:justify; float: left;margin-left: 25px;color: black">
-                4.1 &lt;SUB TITLE 1&gt;<BR/>
-                4.2  &lt;SUB TITLE 2&gt;<BR/>
+                    4.1 &lt;SUB TITLE 1&gt;<BR/>
+                    4.2  &lt;SUB TITLE 2&gt;<BR/>
                 </p>
 
             </div>
@@ -359,7 +339,11 @@
                 <br/>
                 <h4 style="font-size: 20px">1.1 Company Overview</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="Introduction1" rows="15" required></textarea>
+
+
+
 
                 <p style="color:cornflowerblue;margin-right: 450px">Please give a brief description of the
                     organisation and the department you carried out your internship.</p>
@@ -367,7 +351,11 @@
                 <br/>
                 <h4 style="font-size: 20px">1.2 Project Overview</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="Introduction2" rows="15" required></textarea>
+
+
+
 
                 <p style="color:cornflowerblue;margin-right: 525px">Please give an overview of the project(s)
                     that you worked during your internship period </p>
@@ -376,7 +364,10 @@
 
                 <h4 style="font-size: 20px">1.3  Glossary</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="Introduction3" rows="15" required></textarea>
+
+
 
                 <p style="color:cornflowerblue;margin-right: 622px">Following are the abbreviations
                     and definitions used in this document.  </p>
@@ -390,16 +381,21 @@
                 <br/>
                 <h4 style="font-size: 20px">2.1 Objectives</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="IntrenIns1" rows="15" required></textarea>
+
 
                 <p style="color:cornflowerblue;margin-right: 689px">Please describe the company's objectives
-                for the internship</p>
+                    for the internship</p>
 
                 <br/>
 
                 <h4 style="font-size: 20px">2.2 Procedures</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="IntrenIns2" rows="15" required></textarea>
+
+
 
                 <p style="color:cornflowerblue;margin-right: 676px">Please describe the procedures followed
                     during the internship</p>
@@ -408,7 +404,9 @@
 
                 <h4 style="font-size: 20px">2.3 Methodology</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="IntrenIns3" rows="15" required></textarea>
+
                 <p style="color:cornflowerblue;margin-right: 665px">Please describe the methodology you used
                     during the internship </p>
             </div>
@@ -421,7 +419,10 @@
                 <br/>
                 <h4 style="font-size: 20px">3.1 Learning</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="LearnOut1" rows="15" required></textarea>
+
+
 
                 <p style="color:cornflowerblue;margin-right: 661px">Please describe what student
                     learned during the internship perio</p>
@@ -430,7 +431,9 @@
 
                 <h4 style="font-size: 20px">3.2 Measurable Outcome</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="LearnOut2" rows="15" required></textarea>
+
 
                 <p style="color:cornflowerblue;margin-right:708px">Please describe the measurable
                     outcomes of the project </p>
@@ -439,7 +442,10 @@
 
                 <h4 style="font-size: 20px">3.3 Effectiveness of the Effort</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+
+                <textarea cols="50" name="LearnOut3" rows="15" required></textarea>
+
+
 
                 <p style="color:cornflowerblue;margin-right: 211px;text-align: left">Student should describe how effective was
                     the effort he spent by drawing the analysis of the experience gained during the internship
@@ -456,18 +462,19 @@
                 <br/>
                 <h4 style="font-size: 20px">4.1 &lt;Sub Title 1&gt;</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
-
-
+                    <input type="file" name="cv1" accept="pdf/*">
                 <br/>
 
                 <h4 style="font-size: 20px">4.1 &lt;Sub Title 2&gt;</h4>
 
-                <textarea cols="50" name="CompnyOverview" rows="15" required></textarea>
+                &nbsp;&nbsp;&nbsp;
+                    <input type="file" name="cv2" accept="pdf/*">
+
 
                 <br/>
                 <br/>
                 <br/>
+
                 <input class="submit" name="submit" type="submit" value="Insert">
 
             </div>
@@ -485,6 +492,9 @@
     </div>
 </div>
 </body>
+
+
+</html>
 
 </html>
 
