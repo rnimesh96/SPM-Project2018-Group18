@@ -31,7 +31,7 @@ $studentLearn= $_POST['studentLearn'];
 $ExternalSupervisorName= $_POST['ExternalSupervisorName'];
 $Date=$_POST['Date'];
 
-
+echo $StudentID;
 if($Advertiser_name !=''){
 //Insert Query of SQL
 $query = mysql_query("INSERT INTO form1(StudentID,StudentName,Address,HomePhone,MobilePhone,Email,semester,year,CGPA,EmployeeName,
