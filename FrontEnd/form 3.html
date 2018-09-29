@@ -1,0 +1,146 @@
+
+
+!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="maindiv">
+    <!--HTML Form -->
+    <div class="form_div">
+        <form action="Form3insert.php" method="post" enctype="multipart/form-data" id ="vehicle">
+            <!-- Method can be set as POST for hiding values in URL-->
+            <h2>Interns Daily Diary </h2>
+            <h3>Interns information </h3>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Intern's Name</label>&nbsp
+            <input class="input" name="InternName" type="text" value=""  style=" width: 225px;" pattern="^\s{30}$" required>
+            &nbsp
+            <label>Student's ID</label>
+            &nbsp
+            <input class="input" name="StudentID" type="text" value="" style=" width: 225px;" pattern="^\s{2}-\d{7}$" required></br>
+            <label>Intern's private address:</label>
+            &nbsp&nbsp
+            <input class="input" name="Internprivateaddress" type="text" value="" pattern="^\s{100}$" required></br>
+            <label>Contact No:</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input class="input" name="ContactNo" type="text" value="" pattern="^\d{10}$" required></br>
+            <label>Email Address:</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp
+            <input class="input" name="EmailAddress" type="email" value=""></br>
+
+            <h3>Internship information </h3>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Internship Title</label>&nbsp&nbsp&nbsp
+            <input class="input" name="InternshipTitle" type="text" value=""  style=" width: 225px;" pattern="^\s{100}$" required>
+            &nbsp
+            <label>Specialisation</label>
+            <input class="input" name="Specialisation" type="text" value="" style=" width: 225px;" pattern="^\s{30}$" required></br>
+            <label>Overall internship Period From</label>&nbsp&nbsp&nbsp
+            <input class="input" name="OverallinternshipPeriodFrom" type="text" value=""  style=" width: 225px; pattern="^\s{30}$" required">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Period To</label>
+            <input class="input" name="PeriodTo" type="text" value="" style=" width: 225px;"></br>
+
+            <table>
+                <h2>Internal Training information  </h2>
+                <h3 style="margin-left: 776px;">period</h3>
+                <tr>
+                    <th>Training Party</th>
+                    <th>Training Description</th>
+                    <th>From</th>
+                    <th>To</th>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                    <td>&nbsp</td>
+                </tr>
+            </table>
+
+            </br>
+
+
+
+            <label>Summery of the key Tasks Completed For the month of [month/year]:</label>
+            <textarea cols="25" name="SummeryofthekeyTasks" rows="5" pattern="^\s{100}$" required></textarea>
+            <td>
+                </br></br><br/>
+                <label>Details and notes of work carried out,problems encountered and how solved ETC., sketches and dimensions to be given wherever possible.</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="Detailsandnotesofworkcarriedout" rows="5" pattern="^\s{100}$" required></textarea>
+            <td>
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="certified1" value="certified">I certified that above information is correct and genuine work of mine<br>
+                </br><br/>
+                <label>Remarks And certification by the external supervisor for the month of [month/year]:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="Remarks" rows="5" pattern="^\s{30}$" required></textarea>
+            <td></br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="certified2" value="certified">I certified that I have reviwed and confirmed the work carried out by the intern is a specified above<br>
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>External Supervisor Name </label>
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px; pattern="^\s{30}$" required">
+                &nbsp&nbsp
+                <label>Date</label>
+                <input class="input" name="Date" type="Date" value="" style=" width: 225px;"><br/>
+
+
+                <input class="submit" name="submit" type="submit" value="Insert">
+
+        </form>
+
+
+        <h2>Note</h2>
+        <span style="color:red">Please e-mail this form within one week after the start date mentioned above to saman.g@sliit.lk by the external supervisor’s official e-mail</span>
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
+

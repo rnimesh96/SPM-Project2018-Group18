@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="maindiv">
+    <!--HTML Form -->
+    <div class="form_div">
+        <form action="Form5insert.php" method="post" enctype="multipart/form-data" id ="vehicle">
+            <!-- Method can be set as POST for hiding values in URL-->
+            <h2>Final evaluation of the  Internship Student  </h2>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Student ID </label>
+            &nbsp
+
+            <input class="input" name="StudentID" type="text" value=""  style=" width: 225px;"pattern ="^\s{2}-\d{8}$" required">
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Student's Name</label>
+            <input class="input" name="StudentName" type="text" value="" style=" width: 225px;"pattern ="^\s{30}$" required></br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Employee's Name</label>&nbsp&nbsp&nbsp
+            <input class="input" name="EmployeeName" type="text" value=""  style=" width: 225px;" pattern ="^\s{30}$" required>&nbsp
+            <label>Supervisor's Name</label>
+            <input class="input" name="SupervisorName" type="text" value="" style=" width: 225px; pattern ="^\s{30}$" required"></br>
+
+            </br></br>
+
+            <label>Describe the differances,if any,between student's initial contract and actual assignment which developed</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+            <textarea cols="25" name="differances" rows="5" pattern ="^\s{100}$" required></textarea>
+
+            <td></br>
+
+                <h2>Performance of the student</h2>
+
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Category </label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Above average</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Average</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Below average</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Comments,Example,Observation</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                </br>
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Volume of work</label>
+                <input type="radio" name="Volumeofwork" value="Above average" style="margin-left:160px">
+                <input type="radio" name="Volumeofwork" value="Average" style="margin-left:82px">
+                <input type="radio" name="Volumeofwork" value="Below average" style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Quality of work</label>
+                <input type="radio" name="Qualityofwork" value="Above average"style="margin-left:162px">
+                <input type="radio" name="Qualityofwork" value="Average"style="margin-left:82px">
+                <input type="radio" name="Qualityofwork" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Analytical ability</label>
+                <input type="radio" name="Analyticalability" value="Above average"style="margin-left:153px">
+                <input type="radio" name="Analyticalability" value="Average"style="margin-left:82px">
+                <input type="radio" name="Analyticalability" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Ability to resolve problem</label>
+                <input type="radio" name="Abilitytoresolveproblem" value="Above average"style="margin-left:103px">
+                <input type="radio" name="Abilitytoresolveproblem" value="Average"style="margin-left:82px">
+                <input type="radio" name="Abilitytoresolveproblem" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Accuracy and throughness</label>
+                <input type="radio" name="Accuracyandthroughness" value="Above average"style="margin-left:102px">
+                <input type="radio" name="Accuracyandthroughness" value="Average"style="margin-left:82px">
+                <input type="radio" name="Accuracyandthroughness" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Ability to work under pressure </label>
+                <input type="radio" name="Abilitytoworkunderpressure" value="Above average"style="margin-left:79px">
+                <input type="radio" name="Abilitytoworkunderpressure" value="Average"style="margin-left:82px">
+                <input type="radio" name="Abilitytoworkunderpressure" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Oral communication</label>
+                <input type="radio" name="Oralcommunication" value="Above average"style="margin-left:136px">
+                <input type="radio" name="Oralcommunication" value="Average"style="margin-left:82px">
+                <input type="radio" name="Oralcommunication" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Written communication</label>
+                <input type="radio" name="Writtencommunication" value="Above average"style="margin-left:118px">
+                <input type="radio" name="Writtencommunication" value="Average"style="margin-left:82px">
+                <input type="radio" name="Writtencommunication" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Original and critical thinking</label>
+                <input type="radio" name="Originalandcriticalthinking" value="Above average"style="margin-left:88px">
+                <input type="radio" name="Originalandcriticalthinking" value="Average"style="margin-left:82px">
+                <input type="radio" name="Originalandcriticalthinking" value="Below average"style="margin-left:81px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Ability to learn</label>
+                <input type="radio" name="Abilitytolearn" value="Above average"style="margin-left:165px">
+                <input type="radio" name="Abilitytolearn" value="Average"style="margin-left:82px">
+                <input type="radio" name="Abilitytolearn" value="Below average"style="margin-left:81px">
+                </br>
+                </br>
+
+                <h2>Work Habit of student</h2>
+
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Category </label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Above average</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Average</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Below average</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Comments,Example,Observation</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                </br>
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Effective in organizing work    </label>
+                <input type="radio" name="Effectiveinorganizingwork" value="Above average" style="margin-left:88px">
+                <input type="radio" name="Effectiveinorganizingwork" value="Average" style="margin-left:80px">
+                <input type="radio" name="Effectiveinorganizingwork" value="Below average" style="margin-left:78px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Takes the initative  </label>
+                <input type="radio" name="Takestheinitative" value="Above average"style="margin-left:147px">
+                <input type="radio" name="Takestheinitative" value="Average"style="margin-left:79px">
+                <input type="radio" name="Takestheinitative" value="Below average"style="margin-left:79px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Flexible to non-routine work</label>
+                <input type="radio" name="Flexibletononroutinework" value="Above average"style="margin-left:88px">
+                <input type="radio" name="Flexibletononroutinework" value="Average"style="margin-left:79px">
+                <input type="radio" name="Flexibletononroutinework" value="Below average"style="margin-left:79px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Active and alert   </label>
+                <input type="radio" name="Activeandalert" value="Above average"style="margin-left:160px">
+                <input type="radio" name="Activeandalert" value="Average"style="margin-left:79px">
+                <input type="radio" name="Activeandalert" value="Below average"style="margin-left:79px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Attitude toward organization </label>
+                <input type="radio" name="Attitudetowardorganization" value="Above average"style="margin-left:88px">
+                <input type="radio" name="Attitudetowardorganization" value="Average"style="margin-left:79px">
+                <input type="radio" name="Attitudetowardorganization" value="Below average"style="margin-left:79px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Team Player   </label>
+                <input type="radio" name="TeamPlayer " value="Above average"style="margin-left:179px">
+                <input type="radio" name="TeamPlayer " value="Average"style="margin-left:79px">
+                <input type="radio" name="TeamPlayer " value="Below average"style="margin-left:79px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Diligance and perserverance  </label>
+                <input type="radio" name="Diliganceandperserverance" value="maAbove averagele"style="margin-left:90px">
+                <input type="radio" name="Diliganceandperserverance" value="Average"style="margin-left:79px">
+                <input type="radio" name="Diliganceandperserverance" value="Below average"style="margin-left:79px">
+                </br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Accepts Responsibility</label>
+                <input type="radio" name="AcceptsResponsibility" value="Above average"style="margin-left:120px">
+                <input type="radio" name="AcceptsResponsibility" value="Average"style="margin-left:79px">
+                <input type="radio" name="AcceptsResponsibility" value="Below average"style="margin-left:79px">
+                </br>
+                </br>
+
+                <label>List possitive personal Characteristics(Business acumen,Vigor,Adoptability,Teamwork,Leadership,Confidence,etc)</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="Listpossitivepersonal" rows="5"></textarea>
+            <td></br></br></br>
+                <label>List personal characteristics that will help the student in his/her proffessional development</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="Listpersonalcharacteristics" rows="5"></textarea>
+            <td></br></br></br>
+                <label>How effective has the internship programme been in meeting the needs of your organization?</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="effective" rows="5"></textarea>
+            <td></br></br></br>
+                <label>Please suggest ways you feel we could make our programme more meaninigfull the student and you,the employee.</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="suggest" rows="5"></textarea>
+            <td></br></br></br>
+                <label>Please comment on the approprateness of the Student's academic training as it related to a position in your organization.</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="comment" rows="5"></textarea>
+            <td></br></br></br>
+                <label>Any other comments about the Student or on the faculty Advisor</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <textarea cols="25" name="othercomments" rows="5"></textarea>
+            <td></br></br></br>
+
+                <h2>Overall Student performance </h2>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="OverallStudentperformance" value="Outstanding" style="margin-left: 170px;"> Outstanding
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="OverallStudentperformance" value="Very Good"> Very Good
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="OverallStudentperformance" value="Good"> Good
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="OverallStudentperformance" value="Marginal"> Marginal
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="radio" name="OverallStudentperformance" value="Unsatisfactory">Unsatisfactory</br>
+                </br></br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <b>This report has been discussed with the student</b>
+                </br></br></br>
+                <label>External Supervisor Name </label>
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Date</label>
+                <input class="input" name="Date" type="date" value="" style=" width: 225px;">
+ <input class="submit" name="submit" type="submit" value="Insert">
+        </form>
+
+
+        <h2>Note</h2>
+        <span style="color:red">Please e-mail this form within one week after the start date mentioned above to saman.g@sliit.lk by the external supervisor’s official e-mail</span>
+
+
+
+
+    </div>
+</div>
+</body>
+
+</html>
+
