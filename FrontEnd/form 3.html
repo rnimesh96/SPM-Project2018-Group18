@@ -1,7 +1,6 @@
 
-<!DOCTYPE html>
 
-<!--Form I-3-->
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -12,25 +11,25 @@
 <div class="maindiv">
     <!--HTML Form -->
     <div class="form_div">
-        <form action="Form3insert.php" method="post" enctype="multipart/form-data" id ="vehicle">
+        <form action="/internship-prod/BackEnd/Form3insert.php" method="post" enctype="multipart/form-data" id ="vehicle">
             <!-- Method can be set as POST for hiding values in URL-->
             <h2>Interns Daily Diary </h2>
             <h3>Interns information </h3>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Intern's Name</label>&nbsp
-            <input class="input" name="InternName" type="text" value=""  style=" width: 225px;" pattern="^\s{30}$" required>
+            <input class="input" name="InternName" type="text" value=""  style=" width: 225px;" pattern="[A-Za-z]{5,}"title="name" required>
             &nbsp
             <label>Student's ID</label>
             &nbsp
-            <input class="input" name="StudentID" type="text" value="" style=" width: 225px;" pattern="^\s{2}-\d{7}$" required></br>
+            <input class="input" name="StudentID" type="text" value="" style=" width: 225px;" pattern="[A-Za-z]{2}[0-9]{8}" required title="ITXXXXXXXXXX"></br>
             <label>Intern's private address:</label>
             &nbsp&nbsp
-            <input class="input" name="Internprivateaddress" type="text" value="" pattern="^\s{100}$" required></br>
+            <input class="input" name="Internprivateaddress" type="text" value="" title="Address"required></br>
             <label>Contact No:</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="input" name="ContactNo" type="text" value="" pattern="^\d{10}$" required></br>
+            <input class="input" name="ContactNo" type="text" value=""pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
             <label>Email Address:</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp
@@ -40,10 +39,10 @@
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <label>Internship Title</label>&nbsp&nbsp&nbsp
-            <input class="input" name="InternshipTitle" type="text" value=""  style=" width: 225px;" pattern="^\s{100}$" required>
+            <input class="input" name="InternshipTitle" type="text" value=""  style=" width: 225px;" title="title" required>
             &nbsp
             <label>Specialisation</label>
-            <input class="input" name="Specialisation" type="text" value="" style=" width: 225px;" pattern="^\s{30}$" required></br>
+            <input class="input" name="Specialisation" type="text" value="" style=" width: 225px;" title="specilisation" required></br>
             <label>Overall internship Period From</label>&nbsp&nbsp&nbsp
             <input class="input" name="OverallinternshipPeriodFrom" type="text" value=""  style=" width: 225px; pattern="^\s{30}$" required">
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -102,18 +101,18 @@
 
 
             <label>Summery of the key Tasks Completed For the month of [month/year]:</label>
-            <textarea cols="25" name="SummeryofthekeyTasks" rows="5" pattern="^\s{100}$" required></textarea>
+            <textarea cols="25" name="SummeryofthekeyTasks" rows="5"pattern="[A-Za-z]{5,}" required></textarea>
             <td>
                 </br></br><br/>
                 <label>Details and notes of work carried out,problems encountered and how solved ETC., sketches and dimensions to be given wherever possible.</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <textarea cols="25" name="Detailsandnotesofworkcarriedout" rows="5" pattern="^\s{100}$" required></textarea>
+                <textarea cols="25" name="Detailsandnotesofworkcarriedout" rows="5" pattern="[A-Za-z]{5,}" required></textarea>
             <td>
                 </br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <input type="radio" name="certified1" value="certified">I certified that above information is correct and genuine work of mine<br>
                 </br><br/>
                 <label>Remarks And certification by the external supervisor for the month of [month/year]:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <textarea cols="25" name="Remarks" rows="5" pattern="^\s{30}$" required></textarea>
+                <textarea cols="25" name="Remarks" rows="5" pattern="[A-Za-z]{5,}" required></textarea>
             <td></br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <input type="radio" name="certified2" value="certified">I certified that I have reviwed and confirmed the work carried out by the intern is a specified above<br>
@@ -123,7 +122,7 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <label>External Supervisor Name </label>
-                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px; pattern="^\s{30}$" required">
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;"pattern="[A-Za-z]{5,}"required">
                 &nbsp&nbsp
                 <label>Date</label>
                 <input class="input" name="Date" type="Date" value="" style=" width: 225px;"><br/>
