@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="maindiv">
+    <!--HTML Form -->
+    <div class="form_div">
+        <form action="Form1insert.php" method="post" enctype="multipart/form-data" id ="vehicle">
+            <!-- Method can be set as POST for hiding values in URL-->
+            <h2>Internship Acceptance Form I-1 </h2>
+            <span style="color:red;margin-left: 130px;">(To be filled by the student)</span>
+            <label >Student ID:</label>
+            <input class="input" name="StudentID" type="text" value="" style="width: 230px;"pattern="[A-Za-z]{2}[0-9]{8}" required title="ITXXXXXXXXXX"></br>
+            <label>Student Name:</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input class="input" name="StudentName" type="text" value=""  pattern="[A-Za-z]{5,}"title="name" required ></br>
+            <label>Address:</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <textarea cols="25" name="Address" rows="5"  pattern="[A-Za-z]{8,}"title="Address"required></textarea>
+            <td></br>
+                <label>Home Phone:</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="input" name="HomePhone" type="text" value="" pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
+                <label>Mobile Phone:</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="input" name="MobilePhone" type="text" value=""pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
+                <label>Email:</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp
+                <input class="input" name="Email" type="email" value=""></br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span style="color:red">*use comma(,) to separate multiple email addresses </span><br/>
+                <select id="soflow" style="margin-left: 125px;" name="semester">
+
+                    <option value="Semester1">Semester 1</option>
+                    <option value="Semester2">Semester 2</option>
+
+                </select>
+                <select id="soflow" name="year">
+
+                    <option value="Year1">Year 1</option>
+                    <option value="Year2">Year 2</option>
+                    <option value="Year3">Year 3</option>
+                    <option value="Year4">Year 4</option>
+
+                </select>
+
+                <label>CGPA</label>
+                <input class="input" name="CGPA" type="text" value="" style=" width: 43px;"></br></br></br>
+
+                <span style="color:red">(To be filled by the Employee)</span><br/>
+                <label>Employee Name</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="input" name="EmployeeName" type="text" value=""pattern="[A-Za-z]{5,}"title="Employee name" required></br>
+
+                <label>Employee Address</label>
+                &nbsp&nbsp&nbsp
+                <input class="input" name="EmployeeAddress" type="text" value=""pattern="[A-Za-z]{5,}"title="Employee name" required></br>
+
+                <label>Supervisor's Name</label>
+                &nbsp&nbsp&nbsp
+                <input class="input" name="SupervisorName" type="text" value=""  style=" width: 225px;"pattern="[A-Za-z]{5,}"title="Supervisor's name" required>
+                &nbsp
+                <label>Supervisor's Phone</label>
+                <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;" pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
+                <label>Supervisor's Title</label>
+                &nbsp&nbsp&nbsp&nbsp&nbsp
+                <input class="input" name="SupervisorTitle" type="text" value="" style=" width: 225px;"pattern="[A-Za-z]{5,}"title="title" required>
+                &nbsp&nbsp
+
+                <label>Supervisor's Email</label>
+                <input class="input" name="SupervisorEmail" type="text" value="" style=" width: 225px;"></br>
+
+                <label>Internship Start Date</label>
+                <input class="input" name="InternshipStartDate" type="date" value="" style=" width: 225px;" >
+                <label>Internship End Date</label>
+                <input class="input" name="InternshipEndDate" type="date" value="" style=" width: 225px;"></br>
+                <span style="color:red">(Recommended Period is no less than 6 months)</span></br>
+
+                <label>No OF Hours/Weeks</label>
+                <input class="input" name="NoOFHours" type="number" value=""style=" width: 43px;">
+                </br>
+                </br>
+                <label><b>Please List  the tasks the students is expected to complete</b></label>
+                <textarea cols="25" name="studentTasks" rows="5" style="    width: 745px;" pattern="^\s{150}$" required></textarea></br></br>
+            <td>
+
+                <label><b>List What the student will learn during the internship period </b></label>
+                <textarea cols="25" name="studentLearn" rows="5"  style="    width: 745px;"></textarea>
+            <td></br>
+                </br></br>
+
+                <label>External Supervisor Name </label>
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;"pattern="[A-Za-z]{5,}"title="name"required>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <label>Date</label>
+                <input class="input" name="Date" type="date" value="" style=" width: 225px;"required>
+
+
+                <input class="submit" name="submit" type="submit" value="Insert">
+        </form>
+
+        <h2>Note</h2>
+        <span style="color:red">Please e-mail this form within one week after the start date mentioned above to saman.g@sliit.lk by the external supervisor’s official e-mail</span>
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
