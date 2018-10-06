@@ -6,8 +6,10 @@
 </body>
 <?php
 
-$connection = mysql_connect("localhost", "root", "It12345@#1");  // Establishing Connection with Server
-$db = mysql_select_db("dbname", $connection); // Selecting Database from Server
+
+
+$mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
+
 
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $InternName=$_POST['InternName'];
@@ -30,13 +32,11 @@ $Date= $_POST['Date'];
 
 
 
-if($Advertiser_name !=''){
+if($StudentID !=''){
 //Insert Query of SQL
-$query = mysql_query("INSERT INTO form3(InternName,StudentID,InternprivateaddressInternprivateaddress,ContactNo,EmailAddress,Email,InternshipTitle,
-Specialisation,OverallinternshipPeriodFrom,PeriodTo,SummeryofthekeyTasks,Detailsandnotesofworkcarriedout,certified1,Remarks,certified2,ExternalSupervisorName,
-ExternalSupervisorName,Date
-) values ('$InternName','$StudentID','$InternprivateaddressInternprivateaddress','$ContactNo','$EmailAddress','$Email','$InternshipTitle','$Specialisation',
-
+$query = $mysqli->query("INSERT INTO Form_3(InternName,StudentID,Internprivateaddress,ContactNo,EmailAddress,InternshipTitle,Specialisation,
+OverallinternshipPeriodFrom,PeriodTo,SummeryofthekeyTasks,Detailsandnotesofworkcarriedout,certified1,Remarks,certified2,ExternalSupervisorName,Date
+) values ('$InternName','$StudentID','$Internprivateaddress','$ContactNo','$EmailAddress','$InternshipTitle','$Specialisation',
 '$OverallinternshipPeriodFrom','$PeriodTo','$SummeryofthekeyTasks','$Detailsandnotesofworkcarriedout','$certified1','$Remarks','$certified2','$ExternalSupervisorName',
 '$Date'
 )");
