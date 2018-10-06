@@ -208,44 +208,135 @@
             font-size:18px
         }
 	
-.dropbtn {
-    background-color: #00BFFF;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+ .button {
+    background-color: #4CAF50; /* Green */
     border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-	    margin-left: 444px;
-    
-	
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:#6495ED
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.6s;
+    cursor: pointer;
+	border-radius:12px;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #001f3f;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.button1:hover {
+    background-color: #001f3f;
+    color: white;
+}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.button2 {
+
+    background-color: white; 
+    color: black; 
+    border: 2px solid #FFDC00;
+}
+
+.button2:hover {
+    background-color: #FFDC00;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #01FF70;
+}
+
+.button3:hover {
+    background-color: #01FF70;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #B10DC9;
+}
+
+.button4:hover {
+	background-color: #B10DC9;
+	color: white;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #7FDBFF;
+}
+
+.button5:hover {
+    background-color: #7FDBFF;
+    color: white;
+}
+.button6 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #85144b;
+}
+
+.button6:hover {
+    background-color: #85144b;
+    color: white;
+}
+
+.button7 {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF4136;
+}
+
+.button7:hover {
+	background-color: #FF4136;
+	color: white;
+}
+
+.button8 {
+    background-color: white;
+    color: black;
+    border: 2px solid #AAAAAA;
+}
+
+.button8:hover {
+    background-color: #AAAAAA;
+    color: white;
+}
 </style>
+   
+<script>
+function openFormReg() {
+    window.open("formreg.html");
+}
+function openForm1() {
+    window.open("Form1.html");
+}
+function openForm3() {
+    window.open("form 3.html");
+}
+function openForm5() {
+    window.open("Form5.html");
+}
+function openForm6() {
+    window.open("Form I-6.html");
+}
+function openForm7() {
+    window.open("Form7.html");
+}
+function openFeedBack() {
+    window.open("Feed_Back.html");
+}
+
+</script>
    
 
 </head>
@@ -275,23 +366,15 @@
 
         </form>
 
-<div class="dropdown">
-  <button class="dropbtn" style="width: 130px;">Forms</button>
-  <div class="dropdown-content">
-	   <a href="formreg.html">Registration </a>
-    <a href="Form1.html">Form 1</a>
+<div style="width:1000px ;margin-left:50px">
+<button class="button button8" onclick="openFormReg()">Register</button>
+<button class="button button2" onclick="openForm1()">Form 1</button>
+<button class="button button3" onclick="openForm3()">Form 3</button>
+<button class="button button4" onclick="openForm5()">Form 5</button>
+<button class="button button5" onclick="openForm6()">Form 6</button>
+<button class="button button6" onclick="openForm7()">Form 7</button>
+<button class="button button7" onclick="openFeedBack()">Feed-back</button>
 
-    <a href="form 3.html">Form 3</a>
-    <a href="Form5.html">Form 5</a>
-	<a href="Form I-6.html">Form 6</a>
-	<a href="Form7.html">Form 7</a>
-	  <a href="Feed_Back.html">FeedBack </a>
-
-  </div>
-</div>
-
-
-    </div>
 </div>
 </body>
 
