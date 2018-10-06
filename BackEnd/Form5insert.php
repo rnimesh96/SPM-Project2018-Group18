@@ -5,8 +5,7 @@
 <body>
 </body>
 <?php
-$connection = mysql_connect("localhost", "root", "It12345@#1");  // Establishing Connection with Server
-$db = mysql_select_db("dbname", $connection); // Selecting Database from Server
+$mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $StudentID=$_POST['StudentID'];
 $StudentName= $_POST['StudentName'];
@@ -36,9 +35,10 @@ $AcceptsResponsibility= $_POST['AcceptsResponsibility'];
 
 if($Advertiser_name !=''){
 //Insert Query of SQL
-$query = mysql_query("INSERT INTO form2(StudentID,StudentName,EmployeeName,SupervisorName,differances,Volumeofwork,
-Qualityofwork,Analyticalability,PeriAbilitytoresolveproblemodTo,Accuracyandthroughness,Abilitytoworkunderpressure,Oralcommunication,Writtencommunication,
-Originalandcriticalthinking,Abilitytolearn,Effectiveinorganizingwork,Takestheinitative,Flexibletononroutinework,Activeandalert,Attitudetowardorganization,TeamPlayer,Diliganceandperserverance,AcceptsResponsibility
+$query = $mysqli->query("INSERT INTO Form_5(StudentID,StudentName,EmployeeName,SupervisorName,differances,Volumeofwork,Qualityofwork,Analyticalability,
+PeriAbilitytoresolveproblemodTo,Accuracyandthroughness,Abilitytoworkunderpressure,Oralcommunication,Writtencommunication,Originalandcriticalthinking,
+Abilitytolearn,Effectiveinorganizingwork,Takestheinitative,Flexibletononroutinework,Activeandalert,Attitudetowardorganization,TeamPlayer,Diliganceandperserverance,
+ AcceptsResponsibility
 ) values ('$StudentID','$StudentName','$EmployeeName','$SupervisorName','$differances','$Volumeofwork','$Qualityofwork',
 '$Analyticalability','$PeriAbilitytoresolveproblemodTo','$Accuracyandthroughness','$Abilitytoworkunderpressure','$Oralcommunication','$Writtencommunication',
 '$Originalandcriticalthinking','$Abilitytolearn','$Effectiveinorganizingwork','$Takestheinitative','$Flexibletononroutinework','$Activeandalert','$TeamPlayer','$Diliganceandperserverance','$AcceptsResponsibility'
