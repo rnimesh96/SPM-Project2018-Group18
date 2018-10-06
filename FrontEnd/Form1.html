@@ -14,20 +14,20 @@
             <h2>Internship Acceptance Form I-1 </h2>
             <span style="color:red;margin-left: 130px;">(To be filled by the student)</span>
             <label >Student ID:</label>
-            <input class="input" name="StudentID" type="text" value="" style="width: 230px; pattern ="^\s{2}-\d{8}$" required"></br>
+            <input class="input" name="StudentID" type="text" value="" style="width: 230px;"pattern="[A-Za-z]{2}[0-9]{8}" required title="ITXXXXXXXXXX"></br>
             <label>Student Name:</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="input" name="StudentName" type="text" value="" pattern="^\s{30}$" required ></br>
+            <input class="input" name="StudentName" type="text" value=""  pattern="[A-Za-z]{5,}"title="name" required ></br>
             <label>Address:</label>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <textarea cols="25" name="Address" rows="5" pattern="^\s{100}$" required></textarea>
+            <textarea cols="25" name="Address" rows="5"  pattern="[A-Za-z]{8,}"title="Address"required></textarea>
             <td></br>
                 <label>Home Phone:</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="HomePhone" type="text" value=""pattern="^\d{10}$" required></br>
+                <input class="input" name="HomePhone" type="text" value="" pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
                 <label>Mobile Phone:</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="MobilePhone" type="text" value="" pattern="^\d{10}$" required></br>
+                <input class="input" name="MobilePhone" type="text" value=""pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
                 <label>Email:</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -64,21 +64,21 @@
                 <span style="color:red">(To be filled by the Employee)</span><br/>
                 <label>Employee Name</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="EmployeeName" type="text" value=""pattern="^\s{30}$" required></br>
+                <input class="input" name="EmployeeName" type="text" value=""pattern="[A-Za-z]{5,}"title="Employee name" required></br>
 
                 <label>Employee Address</label>
                 &nbsp&nbsp&nbsp
-                <input class="input" name="EmployeeAddress" type="text" value=""pattern="^\s{100}$" required></br>
+                <input class="input" name="EmployeeAddress" type="text" value=""pattern="[A-Za-z]{5,}"title="Employee name" required></br>
 
                 <label>Supervisor's Name</label>
                 &nbsp&nbsp&nbsp
-                <input class="input" name="SupervisorName" type="text" value=""  style=" width: 225px;"pattern="^\s{30}$" required>
+                <input class="input" name="SupervisorName" type="text" value=""  style=" width: 225px;"pattern="[A-Za-z]{5,}"title="Supervisor's name" required>
                 &nbsp
                 <label>Supervisor's Phone</label>
-                <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;" pattern="^\d{10}$" required></br>
+                <input class="input" name="SupervisorPhone" type="text" value="" style=" width: 225px;" pattern="[0-9]{10}"title="0xxxxxxxxxx" required></br>
                 <label>Supervisor's Title</label>
                 &nbsp&nbsp&nbsp&nbsp&nbsp
-                <input class="input" name="SupervisorTitle" type="text" value="" style=" width: 225px;"pattern="^\s{30}$" required>
+                <input class="input" name="SupervisorTitle" type="text" value="" style=" width: 225px;"pattern="[A-Za-z]{5,}"title="title" required>
                 &nbsp&nbsp
 
                 <label>Supervisor's Email</label>
@@ -104,10 +104,10 @@
                 </br></br>
 
                 <label>External Supervisor Name </label>
-                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;">
+                <input class="input" name="ExternalSupervisorName" type="text" value="" style=" width: 225px;"pattern="[A-Za-z]{5,}"title="name"required>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <label>Date</label>
-                <input class="input" name="Date" type="date" value="" style=" width: 225px;">
+                <input class="input" name="Date" type="date" value="" style=" width: 225px;"required>
 
 
                 <input class="submit" name="submit" type="submit" value="Insert">
