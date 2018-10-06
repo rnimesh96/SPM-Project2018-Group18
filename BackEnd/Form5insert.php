@@ -5,7 +5,9 @@
 <body>
 </body>
 <?php
+
 $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
+
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $StudentID=$_POST['StudentID'];
 $StudentName= $_POST['StudentName'];
@@ -33,8 +35,8 @@ $AcceptsResponsibility= $_POST['AcceptsResponsibility'];
 
 
 
-if($Advertiser_name !=''){
-//Insert Query of SQL
+if(StudentID !=''){
+
 $query = $mysqli->query("INSERT INTO Form_5(StudentID,StudentName,EmployeeName,SupervisorName,differances,Volumeofwork,Qualityofwork,Analyticalability,
 PeriAbilitytoresolveproblemodTo,Accuracyandthroughness,Abilitytoworkunderpressure,Oralcommunication,Writtencommunication,Originalandcriticalthinking,
 Abilitytolearn,Effectiveinorganizingwork,Takestheinitative,Flexibletononroutinework,Activeandalert,Attitudetowardorganization,TeamPlayer,Diliganceandperserverance,

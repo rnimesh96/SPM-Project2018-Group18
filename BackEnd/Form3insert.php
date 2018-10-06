@@ -5,7 +5,12 @@
 <body>
 </body>
 <?php
+
+
+
+
 $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
+
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $InternName=$_POST['InternName'];
 $StudentID= $_POST['StudentID'];
@@ -23,6 +28,7 @@ $Remarks=$_POST['Remarks'];
 $certified2= $_POST['certified2'];
 $ExternalSupervisorName= $_POST['ExternalSupervisorName'];
 $Date= $_POST['Date'];
+
 
 
 
