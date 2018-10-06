@@ -5,8 +5,10 @@
 <body>
 </body>
 <?php
+
 $connection = mysql_connect("localhost", "root", "It12345@#1");  // Establishing Connection with Server
 $db = mysql_select_db("dbname", $connection); // Selecting Database from Server
+
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $InternName=$_POST['InternName'];
 $StudentID= $_POST['StudentID'];
@@ -27,12 +29,14 @@ $Date= $_POST['Date'];
 
 
 
+
 if($Advertiser_name !=''){
 //Insert Query of SQL
 $query = mysql_query("INSERT INTO form3(InternName,StudentID,InternprivateaddressInternprivateaddress,ContactNo,EmailAddress,Email,InternshipTitle,
 Specialisation,OverallinternshipPeriodFrom,PeriodTo,SummeryofthekeyTasks,Detailsandnotesofworkcarriedout,certified1,Remarks,certified2,ExternalSupervisorName,
 ExternalSupervisorName,Date
 ) values ('$InternName','$StudentID','$InternprivateaddressInternprivateaddress','$ContactNo','$EmailAddress','$Email','$InternshipTitle','$Specialisation',
+
 '$OverallinternshipPeriodFrom','$PeriodTo','$SummeryofthekeyTasks','$Detailsandnotesofworkcarriedout','$certified1','$Remarks','$certified2','$ExternalSupervisorName',
 '$Date'
 )");
