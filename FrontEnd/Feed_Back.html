@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .submit {
+            color:#fff;
+            border-radius:3px;
+            background:#1F8DD6;
+            padding:5px;
+            margin-top:40px;
+            border:none;
+            width:40%;
+            height:30px;
+            box-shadow:0 0 1px 2px #123456;
+            font-size:18px
+        }
+        .reset {
+            color:#fff;
+            border-radius:3px;
+            background:#1F8DD6;
+            padding:5px;
+            margin-top:40px;
+            border:none;
+            width:40%;
+            height:30px;
+            box-shadow:0 0 1px 2px #123456;
+            font-size:18px
+        }
+        h2 {
+            font-size: 60px;
+            text-align:left;
+            text-shadow:2px 2px 2px #cfcfcf;
+            margin-top: 70px;
+            color: #123456;
+        }
+        form textarea{
+            margin-left: 150px;
+        }
+        .input {
+            width:70%;
+            height:15px;
+            border-radius:2px;
+            box-shadow:0 0 1px 2px #123456;
+            padding:7px;
+            border:none;
+            margin-bottom:20px;
+            margin-left: 100px;
+        }
+        .maindiv {
+            margin:30px auto;
+            width:980px;
+            height:500px;
+            background:#fff;+
+        padding-top:20px;
+            font-family:'Droid Serif',serif;
+            font-size:14px
+        }
+        .form_div {
+            width:70%;
+            float:left
+        }
+        form {
+            width:940px;
+            border:1px  ;
+            padding:10px 30px 40px;
+        }
+        form h2 {
+            font-size: 60px;
+            text-align:center;
+            text-shadow:2px 2px 2px #cfcfcf;
+            margin-top: 70px;
+            color: #123456;
+        }
+        form label {
+            font-size: 20px;
+        }
+        textarea {
+            width:80%;
+            height: 200px;
+            border-radius:1px;
+            box-shadow:0 0 1px 2px #123456;
+            margin-top:10px;
+            padding:7px;
+            border:none;
+            margin-left: 0px;
+        }
+        p {
+            color:red;
+            text-align:center
+        }
+        span {
+            text-align:center;
+            color:green
+        }
+        #header{
+            float:left;
+        }
+        #header p{
+            color: black;
+            font-size: 20px;
+        }
+        #header-image{
+            margin-top: 15px;
+            float: right;
+        }
+        #dropdown{
+            margin-left: 180px;
+            margin-top: -70px;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        #Homepage p{
+            font-size: 20px;
+            color: #3b8ec2;
+        }
+        #Homepage span{
+            margin-left: 234px;
+            font-size: 20px;
+            color: #3b8ec2;
+        }
+        #content h2{
+            color: #123456;
+            float: left;
+            font-size: 28px;
+        }
+        #con{
+            color: black;
+            float: left;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="maindiv">
+    <!--HTML Form -->
+    <div class="form_div">
+        <h2>Feed Back</h2>
+
+
+
+
+        <form action="Feed_Back.php" method="post" enctype="multipart/form-data" id ="feedback">
+            <!-- Method can be set as POST for hiding values in URL-->
+
+
+
+
+
+            <div id="content" style="float: left">
+
+                <label><b>Supervisor's  Name</b></label>&nbsp;&nbsp;
+
+                <input class="input" name="SuName" type="text" value="" style=" width: 225px;" pattern ="^\s{50}$" required></br>
+
+                <label><b>Company Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="input" name="CmnyName" type="text" value="" style=" width: 225px;" pattern ="^\s{50}$" required></br>
+
+                <label><b>Student Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="input" name="StdName" type="text" value="" style=" width: 225px;" pattern ="^\s{50}$" required></br>
+
+                <label><b>Student ID</b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="input" name="StdID" type="text" value="" style=" width: 225px;" pattern ="^\s{2}-\d{8}$" required ></br>
+
+                <label><b>Message</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea cols="50" name="Message" rows="15" style="margin-left: 258px" required></textarea>
+
+                </br>
+
+                <input class="reset" name="reset" type="reset" value="Reset" style="margin-bottom:50px;float:left; ">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="submit" name="submit" type="submit" value="Submit" style="margin-bottom:50px;float:left;margin-left:10px">
+			
+
+            </div>
+	
+        </form>
+
+
+
+
+    </div>
+</div>
+</body>
+
+
+</html>
+
+</html>
+
