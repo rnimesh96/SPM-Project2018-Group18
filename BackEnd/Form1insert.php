@@ -5,8 +5,8 @@
 <body>
 </body>
 <?php
-$connection = mysql_connect("localhost", "root", "It12345@#1");  // Establishing Connection with Server
-$db = mysql_select_db("dbname", $connection); // Selecting Database from Server
+$mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");// Establishing Connection with Server
+
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $StudentID=$_POST['StudentID'];
 $StudentName= $_POST['StudentName'];
@@ -30,19 +30,13 @@ $studentTasks=$_POST['studentTasks'];
 $studentLearn= $_POST['studentLearn'];
 $ExternalSupervisorName= $_POST['ExternalSupervisorName'];
 $Date=$_POST['Date'];
-
-echo $StudentID;
-if($Advertiser_name !=''){
+if($StudentID !=''){
 //Insert Query of SQL
-$query = mysql_query("INSERT INTO form1(StudentID,StudentName,Address,HomePhone,MobilePhone,Email,semester,year,CGPA,EmployeeName,
-EmployeeAddress,SupervisorName,SupervisorPhone,SupervisorTitle,SupervisorEmail,InternshipStartDate,InternshipEndDate,NoOFHours,
-studentTasks,studentLearn,ExternalSupervisorName,Date
+$query = $mysqli->query("INSERT INTO Form_1(StudentId, StudentName, Address, HomePhone, MobilePhone, Email, semester, year, CGPA, EmployeeName, EmployeeAddress,SupervisorName, SupervisorPhone, SupervisorTitle, SupervisorEmail, InternshipStartDate, InternshipEndDate, NoOFHours, studentTasks, studentLearn, ExternalSupervisorName, Date
 ) values ('$StudentID','$StudentName','$Address','$HomePhone','$MobilePhone','$Email','$semester','$year','$CGPA','$EmployeeName
-','$EmployeeAddress','$SupervisorName','$SupervisorPhone','$SupervisorTitle','$SupervisorEmail','$InternshipStartDate','$InternshipEndDate','$NoOFHours','$
-studentTasks','$studentLearn','$ExternalSupervisorName','$Date'
+','$EmployeeAddress','$SupervisorName','$SupervisorPhone','$SupervisorTitle','$SupervisorEmail','$InternshipStartDate','$InternshipEndDate','$NoOFHours','$studentTasks','$studentLearn','$ExternalSupervisorName','$Date'
 )");
-
-echo "<br/><br/><span>Data Inserted successfully...!!</span>";
+	echo "<br/><br/><span>Data Inserted successfully...!!</span>";
 }
 else{
 echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
