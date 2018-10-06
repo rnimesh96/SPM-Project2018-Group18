@@ -5,6 +5,7 @@
 <body>
 </body>
 <?php
+
 $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");// Establishing Connection with Server
 
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
@@ -30,12 +31,14 @@ $studentTasks=$_POST['studentTasks'];
 $studentLearn= $_POST['studentLearn'];
 $ExternalSupervisorName= $_POST['ExternalSupervisorName'];
 $Date=$_POST['Date'];
+
 if($StudentID !=''){
-//Insert Query of SQL
+
 $query = $mysqli->query("INSERT INTO Form_1(StudentId, StudentName, Address, HomePhone, MobilePhone, Email, semester, year, CGPA, EmployeeName, EmployeeAddress,SupervisorName, SupervisorPhone, SupervisorTitle, SupervisorEmail, InternshipStartDate, InternshipEndDate, NoOFHours, studentTasks, studentLearn, ExternalSupervisorName, Date
 ) values ('$StudentID','$StudentName','$Address','$HomePhone','$MobilePhone','$Email','$semester','$year','$CGPA','$EmployeeName
 ','$EmployeeAddress','$SupervisorName','$SupervisorPhone','$SupervisorTitle','$SupervisorEmail','$InternshipStartDate','$InternshipEndDate','$NoOFHours','$studentTasks','$studentLearn','$ExternalSupervisorName','$Date'
 )");
+
 	echo "<br/><br/><span>Data Inserted successfully...!!</span>";
 }
 else{
@@ -46,3 +49,4 @@ mysql_close($connection); // Closing Connection with Server
 ?>
 
 </html>
+
