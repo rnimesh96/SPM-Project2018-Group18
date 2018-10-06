@@ -5,7 +5,7 @@
 <body>
 </body>
 <?php
-
+//back end Form I-3
 $connection = mysql_connect("localhost", "root", "It12345@#1");  // Establishing Connection with Server
 $db = mysql_select_db("dbname", $connection); // Selecting Database from Server
 
