@@ -5,8 +5,8 @@
     <body>
     </body>
     <?php
-    $connection = mysql_connect("localhost", "username", "pw");  // Establishing Connection with Server
-    $db = mysql_select_db("dbname", $connection); // Selecting Database from Server
+    $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
+ 
     if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
     $SuName= $_POST['SuName'];
     $CmnyName=$_POST['CmnyName'];
@@ -15,7 +15,7 @@
     $Message= $_POST['Message'];
 
 
-    if($Advertiser_name !=''){
+    if($SuName !=''){
     //Insert Query of SQL
     $query = mysql_query("INSERT INTO feedback(SupervicerName,CmpanyName,StudentName,StudentID,Message) values('$SuName','$CmnyName','$StudentID','$StdName','$StdID','$Message')");
 
