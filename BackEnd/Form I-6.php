@@ -23,9 +23,9 @@
     $CV1= $_POST['cv1'];
     $CV2= $_POST['cv2'];
 
-    if($Advertiser_name !=''){
+    if($StudentID !=''){
         //Insert Query of SQL
-        $query = mysql_query("INSERT INTO Form_6(StudentID,year,date,StudentName,Introduction1,CompnyOverview,Introduction2,Introduction3,IntrenIns1,
+        $query = mysql_query("INSERT INTO Form_6(StudentID,year,date,StudentName,Introduction1,Introduction2,Introduction3,IntrenIns1,
 		IntrenIns2,IntrenIns3,LearnOut1,LearnOut2,LearnOut3,CV1,CV2) values ('$StudentID','$year','$sem','$StudentName','$Introduction1','$Introduction2','$Introduction3',
 		'$IntrenIns1','$IntrenIns2','$IntrenIns3','$LearnOut1','$LearnOut2','$LearnOut3','$CV1','$CV2'
         )");
