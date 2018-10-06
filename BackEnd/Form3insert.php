@@ -8,8 +8,8 @@
 
 
 
-
 $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
+
 
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 $InternName=$_POST['InternName'];
