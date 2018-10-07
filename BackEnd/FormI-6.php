@@ -5,13 +5,13 @@
     <body>
     </body>
     <?php
-   $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
+    $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
     if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
     $StudentName= $_POST['name'];
     $StudentID=$_POST['ITNO'];
     $year==$_POST['year'];
     $sem=$_POST['semester'];
-    $Introduction1= $_POST['Introduction1'];
+    $Introduction1= $_POST['Introduction1']; 
     $Introduction2= $_POST['Introduction2'];
     $Introduction3= $_POST['Introduction3'];
     $IntrenIns1= $_POST['IntrenIns1'];
@@ -20,15 +20,15 @@
     $LearnOut1= $_POST['LearnOut1'];
     $LearnOut2= $_POST['LearnOut2'];
     $LearnOut3= $_POST['LearnOut3'];
-    $CV1= $_POST['cv1'];
-    $CV2= $_POST['cv2'];
 
-    if($StudentID !=''){
+
+
+       if($StudentID !=''){
         //Insert Query of SQL
-        $query = mysql_query("INSERT INTO Form_6(StudentID,year,date,StudentName,Introduction1,Introduction2,Introduction3,IntrenIns1,
-		IntrenIns2,IntrenIns3,LearnOut1,LearnOut2,LearnOut3,CV1,CV2) values ('$StudentID','$year','$sem','$StudentName','$Introduction1','$Introduction2','$Introduction3',
-		'$IntrenIns1','$IntrenIns2','$IntrenIns3','$LearnOut1','$LearnOut2','$LearnOut3','$CV1','$CV2'
-        )");
+        echo("hgfhgfhg");
+        $query = $mysqli->query("INSERT INTO Form_6 values ('$StudentID','$year','$sem','$StudentName' ,'$Introduction1','$Introduction2','$Introduction3','$IntrenIns1'
+,'$IntrenIns2','$IntrenIns3','$LearnOut1','$LearnOut2','$LearnOut3')");
+
 
         echo "<br/><br/><span>Data Inserted successfully...!!</span>";
         }
