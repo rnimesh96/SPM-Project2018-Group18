@@ -17,7 +17,7 @@
 
     if($SuName !=''){
     //Insert Query of SQL
-    $query = mysql_query("INSERT INTO feedback(SupervicerName,CmpanyName,StudentName,StudentID,Message) values('$SuName','$CmnyName','$StudentID','$StdName','$StdID','$Message')");
+    $query = $mysqli->query("INSERT INTO feedback(SupervicerName,CmpanyName,StudentName,StudentID,Message) values('$SuName','$CmnyName','$StudentID','$StdName','$StdID','$Message')");
 
     echo "<br/><br/><span>Data Inserted successfully...!!</span>";
     }
