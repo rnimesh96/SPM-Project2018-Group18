@@ -9,8 +9,6 @@
 $mysqli = new mysqli("localhost", "root", "It12345@#1", "CSSE");
 
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
-$StudentID=$_POST['StudentID'];
-$StudentName= $_POST['StudentName'];
 $EmployeeName= $_POST['EmployeeName'];
 $SupervisorName= $_POST['SupervisorName'];
 $differances= $_POST['differances'];
@@ -43,7 +41,7 @@ Abilitytolearn,Effectiveinorganizingwork,Takestheinitative,Flexibletononroutinew
  AcceptsResponsibility
 ) values ('$StudentID','$StudentName','$EmployeeName','$SupervisorName','$differances','$Volumeofwork','$Qualityofwork',
 '$Analyticalability','$PeriAbilitytoresolveproblemodTo','$Accuracyandthroughness','$Abilitytoworkunderpressure','$Oralcommunication','$Writtencommunication',
-'$Originalandcriticalthinking','$Abilitytolearn','$Effectiveinorganizingwork','$Takestheinitative','$Flexibletononroutinework','$Activeandalert','$TeamPlayer','$Diliganceandperserverance','$AcceptsResponsibility'
+'$Originalandcriticalthinking','$Abilitytolearn','$Effectiveinorganizingwork','$Takestheinitative','$Flexibletononroutinework','$Activeandalert','$Attitudetowardorganization','$TeamPlayer','$Diliganceandperserverance','$AcceptsResponsibility'
 )");
 
 echo "<br/><br/><span>Data Inserted successfully...!!</span>";
